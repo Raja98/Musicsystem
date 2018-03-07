@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardBackgroundColor="#ef680e"
+    card_view:cardElevation="4dp"
+    android:layout_margin="6dp"
+    card_view:cardCornerRadius="3dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/total_linear"
+        android:background="#ef680e"
+        android:layout_gravity="center_vertical"
+        android:weightSum="2">
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/songs"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="6dp"
+                android:textSize="19sp"
+                android:gravity="start"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
